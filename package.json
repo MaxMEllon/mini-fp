@@ -1,0 +1,11 @@
+{
+  "name": "mini-fp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/MaxMEllon/mini-fp.git",
+  "author": "MaxMEllon <maxmellon1994@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "type-name": "^2.0.2"
+  }
+}
