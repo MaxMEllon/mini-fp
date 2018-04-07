@@ -1,5 +1,5 @@
-const typeName = require('type-name')
-const all = require('./all')
+import typeName from 'type-name'
+import all from './all.js'
 /**
  * @param {Array<Function>} [array] - Function list
  * @returns {Function} Composite function
