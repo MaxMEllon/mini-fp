@@ -1,4 +1,5 @@
 const typeName = require('type-name')
+const all = require('./all')
 /**
  * @param {Array<Function>} [array] - Function list
  * @returns {Function} Composite function
@@ -11,16 +12,14 @@ const typeName = require('type-name')
  *
  * f(10) //=> 55
  */
-function validation(f) {
-  if (typeof f != 'function')
-    throw new TypeError('Expected a function')
-  return f
+function validation(array) {
+  if (typeName(array) != 'Array' && !all(x => typeof x == 'function')(array))
+    throw new TypeError('Expected a Array<Function>')
 }
 
 function composite(array) {
-  if (typeName(array) != 'Array')
-    throw new TypeError('Expected a Array<Function>')
-  return array.reverse().map(validation).reduce((g, f) => x => g(f(x)))
+  validation(array)
+  return array.reverse().reduce((g, f) => x => g(f(x)))
 }
 
 export default composite
