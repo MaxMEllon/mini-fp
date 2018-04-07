@@ -3,15 +3,15 @@
  * @returns {Function} Composite function
  * @example
  *
- * const f = composite([
- *  x => x + 1,
- *  x => x * 5,
- * ])
+ * const isFunc = f => typeof f == 'function'
+ * conat isFunctionList = all(isFunc)([x => x + 1, y => y + 2])
+ * isFunctionList //=> true
  *
- * f(10) //=> 55
  */
 function all(f) {
   return function (array) {
     return array.reduce((acc, cur) => acc && f(cur), true)
   }
 }
+
+export default all
