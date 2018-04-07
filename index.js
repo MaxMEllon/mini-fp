@@ -1,11 +1,5 @@
-import all from './libs/all'
-import composite from './libs/composite'
-import once from './libs/once'
-import range  from './libs/range.js'
+export { default as all }from './src/all'
+export { default as composite }from './src/composite'
+export { default as once }from './src/once'
+export { default as range }from './src/range.js'
 
-export default {
-  all,
-  composite,
-  once,
-  range,
-}
