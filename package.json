@@ -11,8 +11,8 @@
     "build": "rollup --config rollup.config.js",
     "build:production": "NODE_ENV=production rollup --config rollup.config.js",
     "pretest": "npm run build",
-    "test": "mocha",
-    "report-coverage": "nyc report --reporter=text-lcov mocha > coverage.lcov && codecov"
+    "test": "nyc mocha",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "dependencies": {
     "type-name": "^2.0.2"
