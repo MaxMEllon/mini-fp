@@ -17,7 +17,13 @@ In a common browser:
 In a modern browser (via ESmodules):
 
 ```javascript
-import F from 'mini-fp'
+import * as F from 'mini-fp'
+```
+
+Tree shaking:
+```javascript
+// just import that when you want to use functions.
+import { map } from 'mini-fp'
 ```
 
 Using npm:
