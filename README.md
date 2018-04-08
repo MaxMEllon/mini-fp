@@ -1,5 +1,7 @@
 # mini-fp
 
+**A library provide utility functions for functional programming.**
+
 The mini-fp library exported as a [UMD](https://github.com/umdjs/umd) and [ESmodule](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import).
 
 
