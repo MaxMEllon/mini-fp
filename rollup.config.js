@@ -21,11 +21,12 @@ export default {
   }],
   plugins: [
     nodeResolve({
+      main: true,
       jsnext: true,
       browser: true,
     }),
     commonjs(),
     babel({ exclude: 'node_modules/**' }),
-    uglify(),
+    (process.env.NODE_ENV === 'production' && uglify()),
   ]
 }
