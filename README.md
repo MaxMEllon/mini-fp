@@ -1,6 +1,7 @@
 # mini-fp
 
 [![Build Status](https://travis-ci.org/MaxMEllon/mini-fp.svg?branch=master)](https://travis-ci.org/MaxMEllon/mini-fp)
+[![codecov](https://codecov.io/gh/MaxMEllon/mini-fp/branch/master/graph/badge.svg)](https://codecov.io/gh/MaxMEllon/mini-fp)
 
 **A library provide utility functions for functional programming.**
 
