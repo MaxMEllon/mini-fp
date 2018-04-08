@@ -1,15 +1,9 @@
-import typeName from 'type-name'
-
 function mapIterate(xs, f) {
   let index = 0
-  const type = typeName(xs)
-  const length = xs == null ? 0
-    : type == 'Map' || type == 'WeekMap'
-    ? xs.size
-    : xs.length
-  const result = new Array(length)
+  const result = []
   for (const i of xs) {
-    result[index] = f(i, index, xs)
+    const r = f(i, index, xs)
+    result.push(r)
     index++
   }
   return result

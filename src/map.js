@@ -1,4 +1,4 @@
-import mapIterate from './internal/_mapIterate.js'
+import mapIterate from './internal/_mapIterate'
 import mapEnumerable from './internal/_mapEnumerable'
 
 function map(f) {

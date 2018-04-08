@@ -3,7 +3,8 @@ function mapEnumerable(xs, f) {
   const props = Object.keys(xs)
   const result = new Array(props.length)
   while (index < length) {
-    result[index] = f(xs[props[index]], props[index], xs)
+    const key = props[index]
+    result[index] = f(xs[key], key, xs)
     index++
   }
   return result
