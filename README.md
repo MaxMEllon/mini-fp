@@ -1,6 +1,7 @@
 # mini-fp
 
 [![Build Status](https://travis-ci.org/MaxMEllon/mini-fp.svg?branch=master)](https://travis-ci.org/MaxMEllon/mini-fp)
+[![Coverage Status](https://coveralls.io/repos/github/MaxMEllon/mini-fp/badge.svg?branch=master)](https://coveralls.io/github/MaxMEllon/mini-fp?branch=master)
 
 **A library provide utility functions for functional programming.**
 
