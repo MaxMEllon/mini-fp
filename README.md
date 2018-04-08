@@ -1,5 +1,7 @@
 # mini-fp
 
+[![Build Status](https://travis-ci.org/MaxMEllon/mini-fp.svg?branch=master)](https://travis-ci.org/MaxMEllon/mini-fp)
+
 **A library provide utility functions for functional programming.**
 
 The mini-fp library exported as a [UMD](https://github.com/umdjs/umd) and [ESmodule](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import).
@@ -46,7 +48,7 @@ import F from 'mini-fp'
 Requirements
 ---
 
-- *node* >= **4.x**
+- *node* >= **6.x**
 - *browser*
   - Safari >= **7**
 
