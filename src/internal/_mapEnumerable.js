@@ -1,4 +1,6 @@
 function mapEnumerable(xs, f) {
+  if (typeof xs != 'object')
+    throw new TypeError('Expected a object')
   let index = 0
   const props = Object.keys(xs)
   const result = new Array(props.length)
