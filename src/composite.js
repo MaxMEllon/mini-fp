@@ -1,5 +1,11 @@
 import typeName from 'type-name'
-import all from './all.js'
+import all from './all'
+
+function validation(array) {
+  if (typeName(array) != 'Array' && !all(x => typeof x == 'function')(array))
+    throw new TypeError('Expected a Array<Function>')
+}
+
 /**
  * @param {Array<Function>} [array] - Function list
  * @returns {Function} Composite function
@@ -12,11 +18,6 @@ import all from './all.js'
  *
  * f(10) //=> 55
  */
-function validation(array) {
-  if (typeName(array) != 'Array' && !all(x => typeof x == 'function')(array))
-    throw new TypeError('Expected a Array<Function>')
-}
-
 function composite(array) {
   validation(array)
   return array.reverse().reduce((g, f) => x => g(f(x)))
