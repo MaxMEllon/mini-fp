@@ -1,6 +1,6 @@
 {
   "name": "mini-fp",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha",
   "main": "./dist/mini-fp.js",
   "browser": "./dist/mini-fp.umd.js",
   "jsnext:main": "./dist/mini-fp.es.mjs",
