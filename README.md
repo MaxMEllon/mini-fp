@@ -4,7 +4,6 @@
 
 The mini-fp library exported as a [UMD](https://github.com/umdjs/umd) and [ESmodule](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import).
 
-
 Installation
 ---
 
@@ -43,3 +42,22 @@ In Node.js (experimental-modules):
 ```javascript
 import F from 'mini-fp'
 ```
+
+Requirements
+---
+
+- *node* >= **4.x**
+- *browser*
+  - Safari >= **7**
+
+Q & A
+---
+
+### Symbol not found
+
+Using [medikoo/es6-symbol](https://github.com/medikoo/es6-symbol).
+
+```javascript
+require('es6-symbol/implement')
+```
+

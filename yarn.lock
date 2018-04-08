@@ -606,8 +606,8 @@
     to-fast-properties "^2.0.0"
 
 "@maxmellon/babel-preset@^1.1.8":
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/@maxmellon/babel-preset/-/babel-preset-1.1.8.tgz#28a2ae2b83b1e9a718f3e6749e63ef0172dc7d5c"
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@maxmellon/babel-preset/-/babel-preset-1.1.9.tgz#f7fef67095caf08918a8cac9cbbba2f33db07fe2"
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.0.0-beta.41"
     "@babel/plugin-proposal-object-rest-spread" "^7.0.0-beta.41"

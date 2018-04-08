@@ -13,7 +13,6 @@
     "test": "mocha --require intelli-espower-loader ./test/*.js"
   },
   "dependencies": {
-    "es6-symbol": "^3.1.1",
     "type-name": "^2.0.2"
   },
   "devDependencies": {
